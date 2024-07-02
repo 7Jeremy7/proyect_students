@@ -1,0 +1,29 @@
+server:
+  port: 0
+  error:
+    include-message: always
+#Configuracion de spring
+spring:
+  application:
+    name: grades-ms
+  #Configuracion de migracion
+  flyway:
+    enabled: true
+    baselineVersion: 1
+    locations:
+      classpath: db/migration
+    sqlMigrationSuffixes: .sql
+    baselineOnMigrate: true
+    sqlMigrationPrefix: V
+    schemas: public
+
+  datasource:
+    url: jdbc:postgresql://stampy.db.elephantsql.com:5432/rbxxtlwg?socketTimeout=3
+    username: rbxxtlwg
+    password: gPRgC6NLGPaK4KcYnGI23UyXlAHm3-Tn
+    driverClassName: org.postgresql.Driver
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+
