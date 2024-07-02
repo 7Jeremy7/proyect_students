@@ -1,5 +1,6 @@
 server:
   port: 8080
+
 spring:
   application:
     name: gateway-ms
@@ -7,7 +8,7 @@ spring:
     gateway:
       discovery:
         locator:
-          enable: 'true'
+          enabled: true
       routes:
         - id: students-ms
           uri: lb://STUDENTS-MS
@@ -17,9 +18,14 @@ spring:
           uri: lb://GRADES-MS
           predicates:
             - Path=/grades/**
-    loadbalancer:
-      ribbon:
-        enabled: 'false'
+
 eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
   instance:
     instance-id: ${spring.application.name}:${server.port}
+
+
+#  Ribbon ya no se utiliza con las versiones más recientes de
+#  Spring Cloud, ya que se ha movido hacia Spring Cloud LoadBalancer.
