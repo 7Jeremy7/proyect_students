@@ -1,5 +1,7 @@
 package com.example.student.controller
 
+import com.example.student.Feign.GradesClient
+import com.example.student.dto.GradesResponse
 import com.example.student.model.Student
 import com.example.student.service.StudentService
 import org.springframework.beans.factory.annotation.Autowired
@@ -14,11 +16,24 @@ class StundentController {
     @Autowired
     lateinit var studentService: StudentService
 
+    @Autowired
+    lateinit var gradesClient: GradesClient
+
+
+
+
+
     @GetMapping
     fun login(): ResponseEntity<*> {
 
         return studentService.list()?.let {
             ResponseEntity(it, HttpStatus.OK)
         } ?: ResponseEntity<Student>( HttpStatus.NOT_FOUND)
+    }
+
+
+    @GetMapping("/{studentId}/grades")
+    fun getGrades(@PathVariable studentId: Long): List<GradesResponse> {
+        return gradesClient.getAllGrades()
     }
 }
