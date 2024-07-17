@@ -35,8 +35,12 @@ class GradesController {
 
 
 
-    @GetMapping("/{studentId}/student-details")
-    fun getGrades(@PathVariable studentId: Long): List<StudentsResponse> {
-        return studentClient.getAllStudents()
+    @GetMapping("/{gradesId}/student-details")
+    fun getGrades(@PathVariable gradesId: Long): ResponseEntity<StudentsResponse> {
+        return try {
+            ResponseEntity(studentClient.getGradesById(gradesId), HttpStatus.OK)
+        } catch (e: Exception) {
+            ResponseEntity(HttpStatus.SERVICE_UNAVAILABLE)
+        }
     }
 }

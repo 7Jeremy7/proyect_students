@@ -1,6 +1,7 @@
 package com.example.student.controller
 
 import com.example.student.Feign.GradesClient
+import com.example.student.dto.GradesRequest
 import com.example.student.dto.GradesResponse
 import com.example.student.model.Student
 import com.example.student.service.StudentService
@@ -36,4 +37,5 @@ class StundentController {
     fun getGrades(@PathVariable studentId: Long): List<GradesResponse> {
         return gradesClient.getAllGrades()
     }
-}
+
+}♠

@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="001c596d-ec2d-4ea6-94ff-74d5ea9e4785" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/grades/src/main/kotlin/com/example/grades/Feign/StudentClient.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grades/src/main/kotlin/com/example/grades/dto/StudentsResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/src/main/kotlin/com/example/student/Feign/GradesClient.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/src/main/kotlin/com/example/student/dto/GradesResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/src/main/kotlin/com/example/student/dto/GradesRequest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/kotlin/com/example/gateway/GatewayApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/kotlin/com/example/gateway/GatewayApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grades/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/grades/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grades/src/main/kotlin/com/example/grades/GradesApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/grades/src/main/kotlin/com/example/grades/GradesApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grades/src/main/kotlin/com/example/grades/Feign/StudentClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/grades/src/main/kotlin/com/example/grades/Feign/StudentClient.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grades/src/main/kotlin/com/example/grades/controller/GradesController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/grades/src/main/kotlin/com/example/grades/controller/GradesController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grades/src/main/kotlin/com/example/grades/service/GradesService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/grades/src/main/kotlin/com/example/grades/service/GradesService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/student/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/src/main/kotlin/com/example/student/StudentApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/student/src/main/kotlin/com/example/student/StudentApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/src/main/kotlin/com/example/student/Feign/GradesClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/student/src/main/kotlin/com/example/student/Feign/GradesClient.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/student/src/main/kotlin/com/example/student/controller/StundentController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/student/src/main/kotlin/com/example/student/controller/StundentController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/student/src/main/kotlin/com/example/student/service/StudentService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/student/src/main/kotlin/com/example/student/service/StudentService.kt" afterDir="false" />
     </list>
@@ -29,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Data Class" />
         <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Data Class" />
       </list>
     </option>
   </component>
@@ -133,6 +125,12 @@
       <workItem from="1720111009037" duration="594000" />
       <workItem from="1720647410489" duration="44000" />
       <workItem from="1720902577906" duration="24279000" />
+      <workItem from="1720985345445" duration="4449000" />
+      <workItem from="1720989837325" duration="82000" />
+      <workItem from="1720990147296" duration="1095000" />
+      <workItem from="1721087244940" duration="198000" />
+      <workItem from="1721149356331" duration="1675000" />
+      <workItem from="1721155215138" duration="432000" />
     </task>
     <servers />
   </component>

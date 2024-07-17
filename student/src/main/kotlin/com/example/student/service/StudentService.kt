@@ -22,10 +22,4 @@ class StudentService {
         return studentRepository.findAll()
     }
 
-
-    fun getGrades(studentId: Long): GradesResponse? {
-        return gradesClient.getGradesById(studentId)
-    }
-
-
 }
